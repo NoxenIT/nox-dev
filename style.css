@@ -1,0 +1,264 @@
+/* ===================== GLOBAL ===================== */
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1a1a2e, #0a0a0a 60%);
+  color: white;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease;
+}
+
+/* Для выделенного текста */
+:root {
+  --accent: #00ffcc;
+}
+
+::selection {
+  background: var(--accent);
+  color: black;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  backdrop-filter: blur(15px);
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+header.scrolled {
+  background: rgba(0,0,0,0.8);
+  padding: 10px 40px;
+  backdrop-filter: blur(20px);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00ffcc, #0066ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(0,255,204,0.3);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+/* ===================== BUTTONS ===================== */
+button, .tg-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.3s;
+}
+
+button {
+  background: linear-gradient(135deg, #00ffcc, #0066ff);
+  color: black;
+  box-shadow: 0 0 15px rgba(0,255,204,0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,255,204,0.6);
+}
+
+.tg-btn {
+  background: linear-gradient(135deg, #0088cc, #00c6ff);
+  color: white;
+  text-decoration: none;
+}
+
+.tg-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===================== SECTIONS ===================== */
+section {
+  padding: 100px 10%;
+  scroll-margin-top: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== CARDS ===================== */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(0,255,204,0.08), rgba(0,102,255,0.05));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 15px 50px rgba(0,255,204,0.35);
+}
+
+/* Glow на карточках */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(0,255,204,0.1), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Лёгкая подсветка */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(120deg, transparent, rgba(0,255,204,0.15), transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* ===================== ТАРИФЫ ===================== */
+.popular {
+  transform: scale(1.05);
+  border: 1px solid rgba(0,255,204,0.4);
+  box-shadow: 0 0 40px rgba(0,255,204,0.3);
+  position: relative;
+}
+
+.popular::before {
+  content: "Выгодно";
+  position: absolute;
+  top: -10px; /* возвращаем как было */
+  left: 20px;
+  background: #00ffcc;
+  color: black;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+/* ===================== TYPOGRAPHY ===================== */
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+strong {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-soft {
+  opacity: 0.7;
+}
+
+.text-strong {
+  font-weight: 600;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-small {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.limit {
+  margin-top: 10px;
+  color: #ff4d4d;
+  font-size: 14px;
+}
+
+/* ===================== ANIMATION ===================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h2:hover {
+  text-shadow: 0 0 30px rgba(0,255,204,0.5);
+  transition: text-shadow 0.3s ease-in-out;
+}

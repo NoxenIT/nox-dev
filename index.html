@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nox | Developer</title>
+
+  <!-- ===== ОСНОВНЫЕ СТИЛИ ===== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===== АНИМАЦИИ (AOS) ===== -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ===== ШРИФТЫ ===== -->
+  <!-- Golos (жирный для заголовков) + Onest (чистый для текста) -->
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700;900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===== HEADER (НАВИГАЦИЯ) ===== -->
+<header>
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#services">Услуги</a>
+    <a href="#portfolio">Портфолио</a>
+    <a href="#contact">Контакты</a>
+
+    <!-- КНОПКА В TELEGRAM -->
+    <a href="https://t.me/NoxenSo" target="_blank" class="tg-btn">
+      Написать в Telegram
+    </a>
+  </nav>
+</header>
+
+<!-- ===== HERO (ПЕРВЫЙ ЭКРАН) ===== -->
+<section class="hero" data-aos="fade-up">
+
+  <!-- ГЛАВНЫЙ ЗАГОЛОВОК -->
+  <h2 id="typing">
+    Создаю сайты, которые <span class="text-accent">выглядят дорого</span>
+  </h2>
+
+  <!-- ОПИСАНИЕ -->
+  <p>Помогаю выделиться среди конкурентов</p>
+  <p class="text-soft">и превращать посетителей в клиентов</p>
+
+  <!-- ТРИГГЕР -->
+  <p class="limit">Осталось 2 места на этот месяц</p>
+
+  <!-- КНОПКА -->
+  <button onclick="scrollToContact()">Обсудить проект</button>
+
+  <!-- МИКРО-ДОВЕРИЕ -->
+  <p class="text-small">💬 Ответ в течение 10–30 минут</p>
+
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" data-aos="fade-up">
+  <h2>Обо мне</h2>
+
+  <p>
+    Я создаю <span class="text-strong">сайты и дизайн</span>, 
+    которые не просто красиво выглядят
+  </p>
+
+  <p class="text-soft">а реально работают на результат</p>
+
+  <p>
+    Моя задача — чтобы твой продукт выглядел 
+    <span class="text-accent">дороже конкурентов</span>
+  </p>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" data-aos="fade-up">
+  <h2>Услуги</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Сайт под ключ</h3>
+      <p>От идеи до готового продукта</p>
+      <p class="text-soft">без лишней сложности</p>
+    </div>
+
+    <div class="card">
+      <h3>Дизайн</h3>
+      <p>Визуал, который выделяет</p>
+      <p class="text-soft">и вызывает доверие</p>
+    </div>
+
+    <div class="card">
+      <h3>Улучшение</h3>
+      <p>Переделка слабого дизайна</p>
+      <p class="text-soft">в сильный и современный</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section id="why" data-aos="fade-up">
+  <h2>Почему выбирают меня</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Выглядит дорого</h3>
+      <p>Создаю визуал уровня студий</p>
+    </div>
+
+    <div class="card">
+      <h3>Фокус на результате</h3>
+      <p>Не просто сайт, а инструмент</p>
+      <p class="text-soft">для привлечения клиентов</p>
+    </div>
+
+    <div class="card">
+      <h3>Без лишнего</h3>
+      <p>Чётко, быстро и по делу</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CASES ===== -->
+<section id="cases" data-aos="fade-up">
+  <h2>Кейсы</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Рост внимания</h3>
+      <p>Карточки стали заметнее</p>
+      <p class="text-soft">и кликабельнее</p>
+    </div>
+
+    <div class="card">
+      <h3>Современный сайт</h3>
+      <p>Проект стал выглядеть</p>
+      <p class="text-soft">на уровень выше</p>
+    </div>
+
+    <div class="card">
+      <h3>Удобство</h3>
+      <p>Интерфейс стал проще</p>
+      <p class="text-soft">и понятнее</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio" data-aos="fade-up">
+  <h2>Портфолио</h2>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" data-aos="fade-up">
+  <h2>Цены</h2>
+
+  <p class="limit">Стартовые цены — позже будут выше</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Старт</h3>
+      <p>Для быстрого запуска</p>
+      <strong>300 ₽</strong>
+    </div>
+
+    <!-- ВЫДЕЛЕННЫЙ ТАРИФ -->
+    <div class="card popular">
+      <h3>Стандарт</h3>
+      <p>Оптимально для большинства задач</p>
+      <strong>700 ₽</strong>
+    </div>
+
+    <div class="card">
+      <h3>PRO</h3>
+      <p>Максимальный результат</p>
+      <strong>1500 ₽</strong>
+    </div>
+
+  </div>
+
+  <!-- ДОЖИМ -->
+  <p class="text-small">
+    💬 Напиши в Telegram — помогу выбрать лучший вариант
+  </p>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" data-aos="fade-up">
+  <h2>Связаться со мной</h2>
+
+  <p>Напиши мне в Telegram — обсудим задачу</p>
+  <p class="text-soft">и я предложу лучшее решение</p>
+
+  <a href="https://t.me/NoxenSo" target="_blank" class="tg-btn">
+    Написать в Telegram
+  </a>
+</section>
+
+<!-- ===== СКРИПТЫ ===== -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
