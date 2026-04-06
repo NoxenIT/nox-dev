@@ -2,219 +2,178 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Nox | Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ===== ОСНОВНЫЕ СТИЛИ ===== -->
+  <title>Jemil | Developer</title>
+
   <link rel="stylesheet" href="style.css">
-
-  <!-- ===== АНИМАЦИИ (AOS) ===== -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- ===== ШРИФТЫ ===== -->
-  <!-- Golos (жирный для заголовков) + Onest (чистый для текста) -->
-  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700;900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ===== HEADER (НАВИГАЦИЯ) ===== -->
-<header>
+<header id="header">
   <nav>
-    <a href="#about">Обо мне</a>
+    <a href="#home">Главная</a>
     <a href="#services">Услуги</a>
-    <a href="#portfolio">Портфолио</a>
+    <a href="#process">Процесс</a>
+    <a href="#pricing">Цены</a>
     <a href="#contact">Контакты</a>
-
-    <!-- КНОПКА В TELEGRAM -->
-    <a href="https://t.me/NoxenSo" target="_blank" class="tg-btn">
-      Написать в Telegram
-    </a>
   </nav>
 </header>
 
-<!-- ===== HERO (ПЕРВЫЙ ЭКРАН) ===== -->
-<section class="hero" data-aos="fade-up">
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1 class="hero-title reveal">
+    Создаю сайты,<br>
+    которые <span class="accent">выглядят дорого</span>
+  </h1>
 
-  <!-- ГЛАВНЫЙ ЗАГОЛОВОК -->
-  <h2 id="typing">
-    Создаю сайты, которые <span class="text-accent">выглядят дорого</span>
-  </h2>
+  <p class="subtitle reveal">
+    и превращают посетителей в клиентов
+  </p>
 
-  <!-- ОПИСАНИЕ -->
-  <p>Помогаю выделиться среди конкурентов</p>
-  <p class="text-soft">и превращать посетителей в клиентов</p>
-
-  <!-- ТРИГГЕР -->
-  <p class="limit">Осталось 2 места на этот месяц</p>
-
-  <!-- КНОПКА -->
   <button onclick="scrollToContact()">Обсудить проект</button>
-
-  <!-- МИКРО-ДОВЕРИЕ -->
-  <p class="text-small">💬 Ответ в течение 10–30 минут</p>
-
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" data-aos="fade-up">
-  <h2>Обо мне</h2>
-
-  <p>
-    Я создаю <span class="text-strong">сайты и дизайн</span>, 
-    которые не просто красиво выглядят
-  </p>
-
-  <p class="text-soft">а реально работают на результат</p>
-
-  <p>
-    Моя задача — чтобы твой продукт выглядел 
-    <span class="text-accent">дороже конкурентов</span>
-  </p>
+<!-- TRUST -->
+<section class="trust reveal">
+  <p>Работаю с проектами разного уровня — от старта до роста</p>
 </section>
 
-<!-- ===== SERVICES ===== -->
-<section id="services" data-aos="fade-up">
-  <h2>Услуги</h2>
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="reveal">Что я делаю</h2>
 
   <div class="cards">
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Сайт под ключ</h3>
-      <p>От идеи до готового продукта</p>
-      <p class="text-soft">без лишней сложности</p>
+      <p class="soft">от идеи до запуска</p>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Дизайн</h3>
-      <p>Визуал, который выделяет</p>
-      <p class="text-soft">и вызывает доверие</p>
+      <p class="soft">визуал, который продаёт</p>
     </div>
 
-    <div class="card">
-      <h3>Улучшение</h3>
-      <p>Переделка слабого дизайна</p>
-      <p class="text-soft">в сильный и современный</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== WHY ===== -->
-<section id="why" data-aos="fade-up">
-  <h2>Почему выбирают меня</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Выглядит дорого</h3>
-      <p>Создаю визуал уровня студий</p>
-    </div>
-
-    <div class="card">
-      <h3>Фокус на результате</h3>
-      <p>Не просто сайт, а инструмент</p>
-      <p class="text-soft">для привлечения клиентов</p>
-    </div>
-
-    <div class="card">
-      <h3>Без лишнего</h3>
-      <p>Чётко, быстро и по делу</p>
+    <div class="card reveal">
+      <h3>Редизайн</h3>
+      <p class="soft">улучшаю слабые проекты</p>
     </div>
 
   </div>
 </section>
 
-<!-- ===== CASES ===== -->
-<section id="cases" data-aos="fade-up">
-  <h2>Кейсы</h2>
+<!-- PROCESS -->
+<section id="process">
+  <h2 class="reveal">Как проходит работа</h2>
 
-  <div class="cards">
+  <div class="steps">
 
-    <div class="card">
-      <h3>Рост внимания</h3>
-      <p>Карточки стали заметнее</p>
-      <p class="text-soft">и кликабельнее</p>
+    <div class="step reveal">
+      <span>01</span>
+      <p>Обсуждаем задачу</p>
     </div>
 
-    <div class="card">
-      <h3>Современный сайт</h3>
-      <p>Проект стал выглядеть</p>
-      <p class="text-soft">на уровень выше</p>
+    <div class="step reveal">
+      <span>02</span>
+      <p>Делаю концепт</p>
     </div>
 
-    <div class="card">
-      <h3>Удобство</h3>
-      <p>Интерфейс стал проще</p>
-      <p class="text-soft">и понятнее</p>
+    <div class="step reveal">
+      <span>03</span>
+      <p>Разработка</p>
+    </div>
+
+    <div class="step reveal">
+      <span>04</span>
+      <p>Запуск проекта</p>
     </div>
 
   </div>
 </section>
 
-<!-- ===== PORTFOLIO ===== -->
-<section id="portfolio" data-aos="fade-up">
-  <h2>Портфолио</h2>
+<!-- REVIEWS -->
+<section id="reviews">
+  <h2 class="reveal">Отзывы</h2>
+
+  <div class="reviews">
+
+    <div class="review reveal">
+      <p>
+        Сайт стал выглядеть намного дороже. 
+        Клиенты начали писать чаще уже в первые дни.
+      </p>
+      <span>— Алексей, онлайн-магазин</span>
+    </div>
+
+    <div class="review reveal">
+      <p>
+        Быстро понял задачу и сделал сильный дизайн. 
+        Теперь не стыдно показывать сайт клиентам.
+      </p>
+      <span>— Дмитрий, услуги</span>
+    </div>
+
+    <div class="review reveal">
+      <p>
+        Сделал редизайн и реально усилил восприятие. 
+        Стало больше доверия со стороны клиентов.
+      </p>
+      <span>— Артём, стартап</span>
+    </div>
+
+  </div>
 </section>
 
-<!-- ===== PRICING ===== -->
-<section id="pricing" data-aos="fade-up">
-  <h2>Цены</h2>
-
-  <p class="limit">Стартовые цены — позже будут выше</p>
+<!-- PRICING -->
+<section id="pricing">
+  <h2 class="reveal">Цены</h2>
 
   <div class="cards">
 
-    <div class="card">
+    <div class="card reveal">
+      <div class="badge">Старт</div>
       <h3>Старт</h3>
-      <p>Для быстрого запуска</p>
       <strong>300 ₽</strong>
     </div>
 
-    <!-- ВЫДЕЛЕННЫЙ ТАРИФ -->
-    <div class="card popular">
+    <div class="card popular reveal">
+      <div class="badge hit">Рекомендуется</div>
       <h3>Стандарт</h3>
-      <p>Оптимально для большинства задач</p>
       <strong>700 ₽</strong>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
+      <div class="badge pro">PRO</div>
       <h3>PRO</h3>
-      <p>Максимальный результат</p>
       <strong>1500 ₽</strong>
     </div>
 
   </div>
-
-  <!-- ДОЖИМ -->
-  <p class="text-small">
-    💬 Напиши в Telegram — помогу выбрать лучший вариант
-  </p>
-
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" data-aos="fade-up">
-  <h2>Связаться со мной</h2>
+<!-- FINAL CTA -->
+<section class="cta reveal">
+  <h2>Готов вывести твой проект на новый уровень</h2>
+  <button onclick="scrollToContact()">Начать</button>
+</section>
 
-  <p>Напиши мне в Telegram — обсудим задачу</p>
-  <p class="text-soft">и я предложу лучшее решение</p>
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="reveal">Связаться</h2>
 
-  <a href="https://t.me/NoxenSo" target="_blank" class="tg-btn">
+  <p class="soft reveal">
+    Напиши — отвечу быстро и предложу решение
+  </p>
+
+  <a href="https://t.me/NoxenSo" class="tg-btn">
     Написать в Telegram
   </a>
 </section>
 
-<!-- ===== СКРИПТЫ ===== -->
 <script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
 
 </body>
 </html>
